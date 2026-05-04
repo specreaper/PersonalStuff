@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <title>Welcome to my Website</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    	<script src="js/init.js"></script>
+	<style>
+		.grid{
+    			display:grid;
+    	 		grid-template-rows: repeat(5, 1fr);
+    	 		grid-template-columns: repeat(3, 1fr);
+    	 		max-width: 1300px;
+			max-height: 750px;			
+         		margin: 0 auto;
+         		background-color: #f5f5f5;
+			padding: 20px;
+		}
+		.header{
+			grid-area: 1/1/2/4;
+			border:2px solid black;
+			margin: 10px;
+			text-align: center;
+		}
+		.info{
+			grid-area: 2/1/6/2;
+			border:2px solid black;
+			margin: 10px;
+		}
+		.photo{
+			grid-area: 2/2/6/3;
+			border:2px solid black;
+			margin: 10px auto;
+			background-color: #B87333;
+		}
+		.links{
+			grid-area: 2/3/6/4;
+			border:2px solid black;
+			margin: 10px;
+			text-align: center;
+		}
+		#centerImage {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+    </head>
+    <body>
+	    <div class="grid">
+		    	<div class="header">
+				<p style="font-size: 600%">Sean's Website</p>
+			</div>
+			<div class="info">
+			    	<p style="font-size: 300%; text-align: center">About Me</p>
+				<hr>
+				<p>My name is Sean Evans I'm a Asian Americian that was born and raised in Arlington Virginia. During my years of highschool so far as 11th grade in terms of DE classes I have taken Computer Programming Princaples and Introduction to Problem Solving and Programming. This year I am taking Web Design and Devolpment, Object-Oriented Programming, and Pre-Calculus.</p>
+			</div>
+			<div class="photo">
+				<img src="PhotoOfSelf.jpeg" alt="Photo of Sean Evans" id="centerImage"/>
+			</div>
+			<div class="links">
+				<p style="font-size: 300%; text-align: center">Nav Links</p>
+				<hr>
+				<div style="font-size: 200%; text-align: center">
+					<a href="index.html">Home</a> <br>
+					<a href="resume.html">Resume</a> <br>
+					<!-- <a href="projects_hub.html">Projects</a><br> -->
+				</div>
+			</div>
+	    </div>
+    </body>
+</html>
